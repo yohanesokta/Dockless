@@ -1,0 +1,13 @@
+ip link set eth0 up
+udhcpc eth0
+apk add e2fsprogs
+mkdir -p /mnt/root
+mount -t ext4 /dev/vda /mnt/root
+wget https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/x86_64/alpine-minirootfs-3.24.1-x86_64.tar.gz
+tar -xzf alpine.tar.gz -C /mnt/root/
+
+chroot /mnt/root /bin/sh
+
+mount --bind /dev /mnt/root/dev
+mount -t proc proc /mnt/root/proc
+mount -t sysfs sysfs /mnt/root/sys
