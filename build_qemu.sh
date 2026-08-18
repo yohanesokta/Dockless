@@ -1,0 +1,37 @@
+#!/bin/bash
+export MSYSTEM=MINGW64
+export PATH=/mingw64/bin:/usr/bin:$PATH
+cd /c/Users/YohanesOktanio/Documents/VM/qemu-9.0.2
+./configure \
+--prefix=/c/Users/YohanesOktanio/Documents/VM/qemu-build \
+--target-list=x86_64-softmmu \
+--disable-gtk \
+--disable-sdl \
+--disable-vnc \
+--disable-opengl \
+--disable-spice \
+--disable-dbus-display \
+--enable-whpx \
+--disable-docs \
+--disable-guest-agent \
+--disable-libiscsi \
+--disable-libnfs \
+--disable-usb-redir \
+--disable-zstd \
+--disable-bzip2 \
+--disable-lzo \
+--disable-snappy \
+--disable-lzfse \
+--disable-seccomp \
+--disable-coroutine-pool \
+--disable-brlapi \
+--disable-curses \
+--disable-curl \
+--disable-vde \
+--disable-virglrenderer \
+--disable-smartcard \
+--disable-virtfs \
+--disable-tools \
+--enable-slirp
+make -j8
+make install

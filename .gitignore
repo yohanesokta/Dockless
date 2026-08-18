@@ -1,2 +1,2 @@
 vm/*.qcow2
-docker/*.exe
+bin/docker/*.exe

@@ -4,10 +4,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 VM = ROOT / "kernel"
 DISK = ROOT / "vm"
-QEMU = "qemu-system-x86_64.exe"
+QEMU_ROOT = ROOT / "bin" / "qemu"
+QEMU = str(QEMU_ROOT / "qemu-system-x86_64.exe")
 
 cmd = [
     QEMU,
+    "-L", str(QEMU_ROOT),
 
     "-machine", "q35",
     "-cpu", "max",

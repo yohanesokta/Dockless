@@ -4,13 +4,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 VM = ROOT / "vm"
 
-QEMU = "qemu-system-x86_64.exe"
+QEMU = str(ROOT / "bin" / "qemu" / "qemu-system-x86_64.exe")
 
 ISO = ROOT / "alpine-standard-3.24.1-x86_64.iso"
 DISK = VM / "alpine.qcow2"
 
 cmd = [
     QEMU,
+    "-L", str(ROOT / "bin" / "qemu"),
     "-machine", "q35",
     "-cpu", "max",
     "-smp", "1",
