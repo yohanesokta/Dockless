@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+	<Docker>
+		<Endpoint>http://192.168.100.2:2375</Endpoint>
+	</Docker>
+	<Vm>
+		<Ram>2G</Ram>
+		<Cpu>1</Cpu>
+		<Vmdksize>50G</Vmdksize>
+	</Vm>
+</Configuration>

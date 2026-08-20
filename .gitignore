@@ -1,2 +1,11 @@
 vm/*.qcow2
+vm/*.vmdk
 bin/docker/*.exe
+app/build
+
+bin/scripts
+bin/icons
+bin/fonts
+bin/*.bat
+bin/sshkeys_vm
+bin/Dockless.exe
