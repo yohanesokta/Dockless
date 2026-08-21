@@ -1,7 +1,10 @@
 vm/*.qcow2
 vm/*.vmdk
 bin/docker/*.exe
+Output
 app/build
+app/docker_debug.txt
+app/vm_log.txt
 
 bin/scripts
 bin/icons
