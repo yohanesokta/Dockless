@@ -6,6 +6,13 @@ Dockless is an experimental, lightweight Docker environment designed to run cont
 
 Inspired by [OrbStack](https://orbstack.dev/), Dockless focuses on reducing the unnecessary resource usage commonly associated with traditional container and VM solutions.
 
+# Download
+
+Download in [github release](https://github.com/yohanesokta/Dockless/releases/latest) or executable in this [Dockless_installer.exe](https://github.com/yohanesokta/Dockless/releases/download/1.0.0-beta.1/Dockless_Installer.exe)
+
+> [!WARNING]
+> Tested only in windows 11. windows 10 may be not working about networking nat
+
 ## Story
 
 Aku menemukan salah satu postingan di Facebook tentang penggunaan alternatif Docker yaitu [OrbStack](https://orbstack.dev/) yang menarik. Yang membuatku tertarik adalah ide marketing mereka yaitu **"Say goodbye to slow, clunky containers and VMs"** wkwkwk.
